@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./src/index.js"></script>
+    <title>Dog Photo Finder</title>
+</head>
+<body>
+    <h1>Specify a Dog Breed and Click Search to retrieve photos</h1>
+
+    
+        <form id="input-form">
+            <label for="dog-breed">Choose Dog Breed</label><br>
+            <select name="dog-breed" class="dog-breed" id="dog-breed-id">
+                <option value="husky">Husky</option>
+                <option value="labrador">Labrador</option>
+                <option value="newfoundland">Newfoundland</option>
+                <option value="retriever">Retriever</option>
+            </select>
+            
+            <button id="submit">Fetch Images</button>
+
+            <div id="results-message"></div>
+          </form> 
+    
+          <div class="image-thumbnails">
+            <div class="indv-thumbnail"></div>
+          </div>
+          
+          
+
+          </div>
+
+          <div class="modal">
+              <span class="close-modal">Close</span>
+              <img class="image-modal" id="current-image" />
+          </div>
+</body>
+</html>
